@@ -19,6 +19,8 @@ namespace CGaffney206Lab3
             this.statesBindingSource.EndEdit();
             this.tableAdapterManager.UpdateAll(this.statesDataSet);
 
+            this.statesTableAdapter.Update(this.statesDataSet.States);
+
         }
 
         private void frmDataMenu_Load(object sender, EventArgs e)
@@ -44,6 +46,12 @@ namespace CGaffney206Lab3
             {
                 this.statesTableAdapter.FillBySearch(this.statesDataSet.States, txtbxSearch.Text);
             }
+        }
+
+        private void frmDataMenu_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            this.Close();
+            mainMenu.Show();
         }
     }
 }

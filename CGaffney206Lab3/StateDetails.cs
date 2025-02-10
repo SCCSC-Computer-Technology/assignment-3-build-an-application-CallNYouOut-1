@@ -45,5 +45,11 @@ namespace CGaffney206Lab3
             this.Close();
             menu.Show();
         }
+
+        private void frmStateDetails_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            this.Close();
+            menu.Show();
+        }
     }
 }
