@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmStateDetails));
             System.Windows.Forms.Label stateIdLabel;
             System.Windows.Forms.Label stateLabel;
             System.Windows.Forms.Label populationLabel;
@@ -43,6 +42,7 @@
             System.Windows.Forms.Label state_CapitolLabel;
             System.Windows.Forms.Label median_IncomeLabel;
             System.Windows.Forms.Label percentage_of_Computer_Related_Jobs_OfferedLabel;
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmStateDetails));
             this.statesDataSet = new CGaffney206Lab3.StatesDataSet();
             this.statesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.statesBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
@@ -92,6 +92,136 @@
             ((System.ComponentModel.ISupportInitialize)(this.statesBindingNavigator)).BeginInit();
             this.statesBindingNavigator.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // stateIdLabel
+            // 
+            stateIdLabel.AutoSize = true;
+            stateIdLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            stateIdLabel.Location = new System.Drawing.Point(559, 88);
+            stateIdLabel.Name = "stateIdLabel";
+            stateIdLabel.Size = new System.Drawing.Size(128, 32);
+            stateIdLabel.TabIndex = 23;
+            stateIdLabel.Text = "State Id:";
+            // 
+            // stateLabel
+            // 
+            stateLabel.AutoSize = true;
+            stateLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            stateLabel.Location = new System.Drawing.Point(592, 123);
+            stateLabel.Name = "stateLabel";
+            stateLabel.Size = new System.Drawing.Size(95, 32);
+            stateLabel.TabIndex = 25;
+            stateLabel.Text = "State:";
+            // 
+            // populationLabel
+            // 
+            populationLabel.AutoSize = true;
+            populationLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            populationLabel.Location = new System.Drawing.Point(517, 158);
+            populationLabel.Name = "populationLabel";
+            populationLabel.Size = new System.Drawing.Size(170, 32);
+            populationLabel.TabIndex = 27;
+            populationLabel.Text = "Population:";
+            // 
+            // state_Flag_DescriptionLabel
+            // 
+            state_Flag_DescriptionLabel.AutoSize = true;
+            state_Flag_DescriptionLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            state_Flag_DescriptionLabel.Location = new System.Drawing.Point(362, 193);
+            state_Flag_DescriptionLabel.Name = "state_Flag_DescriptionLabel";
+            state_Flag_DescriptionLabel.Size = new System.Drawing.Size(325, 32);
+            state_Flag_DescriptionLabel.TabIndex = 29;
+            state_Flag_DescriptionLabel.Text = "State Flag Description:";
+            // 
+            // state_FlowerLabel
+            // 
+            state_FlowerLabel.AutoSize = true;
+            state_FlowerLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            state_FlowerLabel.Location = new System.Drawing.Point(493, 228);
+            state_FlowerLabel.Name = "state_FlowerLabel";
+            state_FlowerLabel.Size = new System.Drawing.Size(194, 32);
+            state_FlowerLabel.TabIndex = 31;
+            state_FlowerLabel.Text = "State Flower:";
+            // 
+            // state_BirdLabel
+            // 
+            state_BirdLabel.AutoSize = true;
+            state_BirdLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            state_BirdLabel.Location = new System.Drawing.Point(529, 263);
+            state_BirdLabel.Name = "state_BirdLabel";
+            state_BirdLabel.Size = new System.Drawing.Size(158, 32);
+            state_BirdLabel.TabIndex = 33;
+            state_BirdLabel.Text = "State Bird:";
+            // 
+            // state_ColorsLabel
+            // 
+            state_ColorsLabel.AutoSize = true;
+            state_ColorsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            state_ColorsLabel.Location = new System.Drawing.Point(496, 298);
+            state_ColorsLabel.Name = "state_ColorsLabel";
+            state_ColorsLabel.Size = new System.Drawing.Size(191, 32);
+            state_ColorsLabel.TabIndex = 35;
+            state_ColorsLabel.Text = "State Colors:";
+            // 
+            // _1st_Largest_CityLabel
+            // 
+            _1st_Largest_CityLabel.AutoSize = true;
+            _1st_Largest_CityLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            _1st_Largest_CityLabel.Location = new System.Drawing.Point(452, 333);
+            _1st_Largest_CityLabel.Name = "_1st_Largest_CityLabel";
+            _1st_Largest_CityLabel.Size = new System.Drawing.Size(235, 32);
+            _1st_Largest_CityLabel.TabIndex = 37;
+            _1st_Largest_CityLabel.Text = "1st Largest City:";
+            // 
+            // _2nd_Largest_CityLabel
+            // 
+            _2nd_Largest_CityLabel.AutoSize = true;
+            _2nd_Largest_CityLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            _2nd_Largest_CityLabel.Location = new System.Drawing.Point(442, 368);
+            _2nd_Largest_CityLabel.Name = "_2nd_Largest_CityLabel";
+            _2nd_Largest_CityLabel.Size = new System.Drawing.Size(245, 32);
+            _2nd_Largest_CityLabel.TabIndex = 39;
+            _2nd_Largest_CityLabel.Text = "2nd Largest City:";
+            // 
+            // _3rd_Largest_CityLabel
+            // 
+            _3rd_Largest_CityLabel.AutoSize = true;
+            _3rd_Largest_CityLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            _3rd_Largest_CityLabel.Location = new System.Drawing.Point(449, 403);
+            _3rd_Largest_CityLabel.Name = "_3rd_Largest_CityLabel";
+            _3rd_Largest_CityLabel.Size = new System.Drawing.Size(238, 32);
+            _3rd_Largest_CityLabel.TabIndex = 41;
+            _3rd_Largest_CityLabel.Text = "3rd Largest City:";
+            // 
+            // state_CapitolLabel
+            // 
+            state_CapitolLabel.AutoSize = true;
+            state_CapitolLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            state_CapitolLabel.Location = new System.Drawing.Point(487, 438);
+            state_CapitolLabel.Name = "state_CapitolLabel";
+            state_CapitolLabel.Size = new System.Drawing.Size(200, 32);
+            state_CapitolLabel.TabIndex = 43;
+            state_CapitolLabel.Text = "State Capitol:";
+            // 
+            // median_IncomeLabel
+            // 
+            median_IncomeLabel.AutoSize = true;
+            median_IncomeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            median_IncomeLabel.Location = new System.Drawing.Point(458, 473);
+            median_IncomeLabel.Name = "median_IncomeLabel";
+            median_IncomeLabel.Size = new System.Drawing.Size(229, 32);
+            median_IncomeLabel.TabIndex = 45;
+            median_IncomeLabel.Text = "Median Income:";
+            // 
+            // percentage_of_Computer_Related_Jobs_OfferedLabel
+            // 
+            percentage_of_Computer_Related_Jobs_OfferedLabel.AutoSize = true;
+            percentage_of_Computer_Related_Jobs_OfferedLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            percentage_of_Computer_Related_Jobs_OfferedLabel.Location = new System.Drawing.Point(36, 508);
+            percentage_of_Computer_Related_Jobs_OfferedLabel.Name = "percentage_of_Computer_Related_Jobs_OfferedLabel";
+            percentage_of_Computer_Related_Jobs_OfferedLabel.Size = new System.Drawing.Size(651, 32);
+            percentage_of_Computer_Related_Jobs_OfferedLabel.TabIndex = 47;
+            percentage_of_Computer_Related_Jobs_OfferedLabel.Text = "Percentage of Computer-Related Jobs Offered:";
             // 
             // statesDataSet
             // 
@@ -250,16 +380,6 @@
             this.tableAdapterManager.StatesTableAdapter = this.statesTableAdapter;
             this.tableAdapterManager.UpdateOrder = CGaffney206Lab3.StatesDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
-            // stateIdLabel
-            // 
-            stateIdLabel.AutoSize = true;
-            stateIdLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            stateIdLabel.Location = new System.Drawing.Point(559, 88);
-            stateIdLabel.Name = "stateIdLabel";
-            stateIdLabel.Size = new System.Drawing.Size(128, 32);
-            stateIdLabel.TabIndex = 23;
-            stateIdLabel.Text = "State Id:";
-            // 
             // stateIdTextBox
             // 
             this.stateIdTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.statesBindingSource, "StateId", true));
@@ -269,16 +389,6 @@
             this.stateIdTextBox.Size = new System.Drawing.Size(268, 39);
             this.stateIdTextBox.TabIndex = 24;
             this.stateIdTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // stateLabel
-            // 
-            stateLabel.AutoSize = true;
-            stateLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            stateLabel.Location = new System.Drawing.Point(592, 123);
-            stateLabel.Name = "stateLabel";
-            stateLabel.Size = new System.Drawing.Size(95, 32);
-            stateLabel.TabIndex = 25;
-            stateLabel.Text = "State:";
             // 
             // stateTextBox
             // 
@@ -290,16 +400,6 @@
             this.stateTextBox.TabIndex = 26;
             this.stateTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // populationLabel
-            // 
-            populationLabel.AutoSize = true;
-            populationLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            populationLabel.Location = new System.Drawing.Point(517, 158);
-            populationLabel.Name = "populationLabel";
-            populationLabel.Size = new System.Drawing.Size(170, 32);
-            populationLabel.TabIndex = 27;
-            populationLabel.Text = "Population:";
-            // 
             // populationTextBox
             // 
             this.populationTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.statesBindingSource, "Population", true));
@@ -309,16 +409,6 @@
             this.populationTextBox.Size = new System.Drawing.Size(268, 39);
             this.populationTextBox.TabIndex = 28;
             this.populationTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // state_Flag_DescriptionLabel
-            // 
-            state_Flag_DescriptionLabel.AutoSize = true;
-            state_Flag_DescriptionLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            state_Flag_DescriptionLabel.Location = new System.Drawing.Point(362, 193);
-            state_Flag_DescriptionLabel.Name = "state_Flag_DescriptionLabel";
-            state_Flag_DescriptionLabel.Size = new System.Drawing.Size(325, 32);
-            state_Flag_DescriptionLabel.TabIndex = 29;
-            state_Flag_DescriptionLabel.Text = "State Flag Description:";
             // 
             // state_Flag_DescriptionTextBox
             // 
@@ -330,16 +420,6 @@
             this.state_Flag_DescriptionTextBox.TabIndex = 30;
             this.state_Flag_DescriptionTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // state_FlowerLabel
-            // 
-            state_FlowerLabel.AutoSize = true;
-            state_FlowerLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            state_FlowerLabel.Location = new System.Drawing.Point(493, 228);
-            state_FlowerLabel.Name = "state_FlowerLabel";
-            state_FlowerLabel.Size = new System.Drawing.Size(194, 32);
-            state_FlowerLabel.TabIndex = 31;
-            state_FlowerLabel.Text = "State Flower:";
-            // 
             // state_FlowerTextBox
             // 
             this.state_FlowerTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.statesBindingSource, "State Flower", true));
@@ -349,16 +429,6 @@
             this.state_FlowerTextBox.Size = new System.Drawing.Size(268, 39);
             this.state_FlowerTextBox.TabIndex = 32;
             this.state_FlowerTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // state_BirdLabel
-            // 
-            state_BirdLabel.AutoSize = true;
-            state_BirdLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            state_BirdLabel.Location = new System.Drawing.Point(529, 263);
-            state_BirdLabel.Name = "state_BirdLabel";
-            state_BirdLabel.Size = new System.Drawing.Size(158, 32);
-            state_BirdLabel.TabIndex = 33;
-            state_BirdLabel.Text = "State Bird:";
             // 
             // state_BirdTextBox
             // 
@@ -370,16 +440,6 @@
             this.state_BirdTextBox.TabIndex = 34;
             this.state_BirdTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // state_ColorsLabel
-            // 
-            state_ColorsLabel.AutoSize = true;
-            state_ColorsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            state_ColorsLabel.Location = new System.Drawing.Point(496, 298);
-            state_ColorsLabel.Name = "state_ColorsLabel";
-            state_ColorsLabel.Size = new System.Drawing.Size(191, 32);
-            state_ColorsLabel.TabIndex = 35;
-            state_ColorsLabel.Text = "State Colors:";
-            // 
             // state_ColorsTextBox
             // 
             this.state_ColorsTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.statesBindingSource, "State Colors", true));
@@ -389,16 +449,6 @@
             this.state_ColorsTextBox.Size = new System.Drawing.Size(268, 39);
             this.state_ColorsTextBox.TabIndex = 36;
             this.state_ColorsTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // _1st_Largest_CityLabel
-            // 
-            _1st_Largest_CityLabel.AutoSize = true;
-            _1st_Largest_CityLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            _1st_Largest_CityLabel.Location = new System.Drawing.Point(452, 333);
-            _1st_Largest_CityLabel.Name = "_1st_Largest_CityLabel";
-            _1st_Largest_CityLabel.Size = new System.Drawing.Size(235, 32);
-            _1st_Largest_CityLabel.TabIndex = 37;
-            _1st_Largest_CityLabel.Text = "1st Largest City:";
             // 
             // _1st_Largest_CityTextBox
             // 
@@ -410,16 +460,6 @@
             this._1st_Largest_CityTextBox.TabIndex = 38;
             this._1st_Largest_CityTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // _2nd_Largest_CityLabel
-            // 
-            _2nd_Largest_CityLabel.AutoSize = true;
-            _2nd_Largest_CityLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            _2nd_Largest_CityLabel.Location = new System.Drawing.Point(442, 368);
-            _2nd_Largest_CityLabel.Name = "_2nd_Largest_CityLabel";
-            _2nd_Largest_CityLabel.Size = new System.Drawing.Size(245, 32);
-            _2nd_Largest_CityLabel.TabIndex = 39;
-            _2nd_Largest_CityLabel.Text = "2nd Largest City:";
-            // 
             // _2nd_Largest_CityTextBox
             // 
             this._2nd_Largest_CityTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.statesBindingSource, "2nd Largest City", true));
@@ -429,16 +469,6 @@
             this._2nd_Largest_CityTextBox.Size = new System.Drawing.Size(268, 39);
             this._2nd_Largest_CityTextBox.TabIndex = 40;
             this._2nd_Largest_CityTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // _3rd_Largest_CityLabel
-            // 
-            _3rd_Largest_CityLabel.AutoSize = true;
-            _3rd_Largest_CityLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            _3rd_Largest_CityLabel.Location = new System.Drawing.Point(449, 403);
-            _3rd_Largest_CityLabel.Name = "_3rd_Largest_CityLabel";
-            _3rd_Largest_CityLabel.Size = new System.Drawing.Size(238, 32);
-            _3rd_Largest_CityLabel.TabIndex = 41;
-            _3rd_Largest_CityLabel.Text = "3rd Largest City:";
             // 
             // _3rd_Largest_CityTextBox
             // 
@@ -450,16 +480,6 @@
             this._3rd_Largest_CityTextBox.TabIndex = 42;
             this._3rd_Largest_CityTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // state_CapitolLabel
-            // 
-            state_CapitolLabel.AutoSize = true;
-            state_CapitolLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            state_CapitolLabel.Location = new System.Drawing.Point(487, 438);
-            state_CapitolLabel.Name = "state_CapitolLabel";
-            state_CapitolLabel.Size = new System.Drawing.Size(200, 32);
-            state_CapitolLabel.TabIndex = 43;
-            state_CapitolLabel.Text = "State Capitol:";
-            // 
             // state_CapitolTextBox
             // 
             this.state_CapitolTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.statesBindingSource, "State Capitol", true));
@@ -470,16 +490,6 @@
             this.state_CapitolTextBox.TabIndex = 44;
             this.state_CapitolTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // median_IncomeLabel
-            // 
-            median_IncomeLabel.AutoSize = true;
-            median_IncomeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            median_IncomeLabel.Location = new System.Drawing.Point(458, 473);
-            median_IncomeLabel.Name = "median_IncomeLabel";
-            median_IncomeLabel.Size = new System.Drawing.Size(229, 32);
-            median_IncomeLabel.TabIndex = 45;
-            median_IncomeLabel.Text = "Median Income:";
-            // 
             // median_IncomeTextBox
             // 
             this.median_IncomeTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.statesBindingSource, "Median Income", true));
@@ -489,16 +499,6 @@
             this.median_IncomeTextBox.Size = new System.Drawing.Size(268, 39);
             this.median_IncomeTextBox.TabIndex = 46;
             this.median_IncomeTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // percentage_of_Computer_Related_Jobs_OfferedLabel
-            // 
-            percentage_of_Computer_Related_Jobs_OfferedLabel.AutoSize = true;
-            percentage_of_Computer_Related_Jobs_OfferedLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            percentage_of_Computer_Related_Jobs_OfferedLabel.Location = new System.Drawing.Point(36, 508);
-            percentage_of_Computer_Related_Jobs_OfferedLabel.Name = "percentage_of_Computer_Related_Jobs_OfferedLabel";
-            percentage_of_Computer_Related_Jobs_OfferedLabel.Size = new System.Drawing.Size(651, 32);
-            percentage_of_Computer_Related_Jobs_OfferedLabel.TabIndex = 47;
-            percentage_of_Computer_Related_Jobs_OfferedLabel.Text = "Percentage of Computer-Related Jobs Offered:";
             // 
             // percentage_of_Computer_Related_Jobs_OfferedTextBox
             // 
@@ -547,6 +547,7 @@
             this.Name = "frmStateDetails";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "State Details";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmStateDetails_FormClosed);
             this.Load += new System.EventHandler(this.frmStateDetails_Load);
             ((System.ComponentModel.ISupportInitialize)(this.statesDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.statesBindingSource)).EndInit();

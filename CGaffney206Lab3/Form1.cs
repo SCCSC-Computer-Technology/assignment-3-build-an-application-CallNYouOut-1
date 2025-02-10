@@ -21,9 +21,12 @@ namespace CGaffney206Lab3
 
     public partial class frmMain : Form
     {
+        StatesDBDataContext db;
         public frmMain()
         {
             InitializeComponent();
+            // Pulling info form the database
+             db = new StatesDBDataContext();
         }
 
 
@@ -35,22 +38,15 @@ namespace CGaffney206Lab3
 
         private void frmMain_Load(object sender, EventArgs e)
         {
-            // Pulling info form the database
-            StatesDBDataContext db = new StatesDBDataContext();
-                          
-            // Generating a list of all states into the listbox
-            foreach (State item in db.States)
-            {
-                lstbxStates.Items.Add(item.State1.ToString());
-            }
+            loadList();
         }
 
         private void btnDetails_Click(object sender, EventArgs e) // Hides main menu and shows state's details
         {
             try
             {
-                this.Hide();
                 frmStateDetails stateDetails = new frmStateDetails(lstbxStates.SelectedIndex, this);
+                this.Hide();
                 stateDetails.ShowDialog();
             }
             catch
@@ -65,5 +61,25 @@ namespace CGaffney206Lab3
             frmDataMenu stateDB = new frmDataMenu(this);
             stateDB.ShowDialog();
         }
+
+        private void loadList()
+        {
+            
+
+            lstbxStates.Items.Clear();
+            // Generating a list of all states into the listbox
+            foreach (State item in db.States)
+            {
+                
+                lstbxStates.Items.Add(item.State1.ToString());
+            }
+        }
+
+        private void frmMain_VisibleChanged(object sender, EventArgs e)
+        {
+            loadList();
+        }
     }
+
+
 }
